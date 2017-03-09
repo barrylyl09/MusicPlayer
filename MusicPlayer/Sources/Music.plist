@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>song</key>
+		<string>春夏秋冬</string>
+		<key>filename</key>
+		<string>cxqd.mp3</string>
+		<key>lrcname</key>
+		<string>cxqd.lrc</string>
+		<key>singer</key>
+		<string>张国荣</string>
+		<key>img</key>
+		<string>singer_zgr.png</string>
+	</dict>
+	<dict>
+		<key>song</key>
+		<string>这么远那么近</string>
+		<key>filename</key>
+		<string>zmynmj.mp3</string>
+		<key>lrcname</key>
+		<string>zmynmj.lrc</string>
+		<key>singer</key>
+		<string>黄耀明</string>
+		<key>img</key>
+		<string>singer_hym.png</string>
+	</dict>
+	<dict>
+		<key>song</key>
+		<string>倾城</string>
+		<key>filename</key>
+		<string>qc.mp3</string>
+		<key>lrcname</key>
+		<string>qc.lrc</string>
+		<key>singer</key>
+		<string>许美静</string>
+		<key>img</key>
+		<string>singer_xmj.png</string>
+	</dict>
+</array>
+</plist>
