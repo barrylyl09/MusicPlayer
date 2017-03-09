@@ -78,7 +78,9 @@
 }
 
 - (IBAction)sliderValueChange:(id)sender {
+    
     _playTimeLabel.text = [NSString stringWithTime:_slider.value * _currentPlayer.duration];
+//    NSLog(@"%@",[NSString stringWithTime:_slider.value * _currentPlayer.duration]);
 }
 
 - (IBAction)touchDownSlider:(id)sender {
@@ -90,7 +92,17 @@
     [self addSliderTimer];
 }
 
-
+- (IBAction)sliderClick:(UITapGestureRecognizer *)sender
+{
+    // 获取点击到的点
+    CGPoint point = [sender locationInView:sender.view];
+    // 计算占全部长度的比例
+    CGFloat num = point.x / _slider.frame.size.width;
+    // 设置当前需要播放时间
+    _currentPlayer.currentTime = num * _currentPlayer.duration;
+    // 更新 slider
+    [self updateSliderInfo];
+}
 
 #pragma mark ---UI
 - (void)setUI

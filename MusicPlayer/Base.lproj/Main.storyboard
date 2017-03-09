@@ -103,6 +103,7 @@
                                             <action selector="endTouchSlider:" destination="fdY-xL-b4e" eventType="touchUpInside" id="qmG-qp-uBt"/>
                                             <action selector="sliderValueChange:" destination="fdY-xL-b4e" eventType="valueChanged" id="dfD-Pc-qrG"/>
                                             <action selector="touchDownSlider:" destination="fdY-xL-b4e" eventType="touchDown" id="bnO-sJ-kf8"/>
+                                            <outletCollection property="gestureRecognizers" destination="1kn-y0-cOl" appends="YES" id="ckz-S0-KTM"/>
                                         </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5L-r1-gTq" userLabel="play/stop_Btn">
@@ -218,6 +219,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGG-Xw-Au4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1kn-y0-cOl">
+                    <connections>
+                        <action selector="sliderClick:" destination="fdY-xL-b4e" id="0CY-kK-2Us"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="6" y="-141"/>
         </scene>
