@@ -5,9 +5,9 @@
 	<dict>
 		<key>song</key>
 		<string>春夏秋冬</string>
-		<key>filename</key>
+		<key>fileName</key>
 		<string>cxqd.mp3</string>
-		<key>lrcname</key>
+		<key>lrcName</key>
 		<string>cxqd.lrc</string>
 		<key>singer</key>
 		<string>张国荣</string>
@@ -17,9 +17,9 @@
 	<dict>
 		<key>song</key>
 		<string>这么远那么近</string>
-		<key>filename</key>
+		<key>fileName</key>
 		<string>zmynmj.mp3</string>
-		<key>lrcname</key>
+		<key>lrcName</key>
 		<string>zmynmj.lrc</string>
 		<key>singer</key>
 		<string>黄耀明</string>
@@ -29,9 +29,9 @@
 	<dict>
 		<key>song</key>
 		<string>倾城</string>
-		<key>filename</key>
+		<key>fileName</key>
 		<string>qc.mp3</string>
-		<key>lrcname</key>
+		<key>lrcName</key>
 		<string>qc.lrc</string>
 		<key>singer</key>
 		<string>许美静</string>
