@@ -16,6 +16,8 @@
 
 @property (nonatomic, weak) LrcLabel *lrcLabel;
 
+@property (nonatomic, assign) NSTimeInterval currentTime;
 
+@property (nonatomic, assign) NSTimeInterval duration;
 
 @end

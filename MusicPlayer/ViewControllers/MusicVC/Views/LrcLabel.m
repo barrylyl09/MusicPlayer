@@ -16,6 +16,7 @@
     [self setNeedsDisplay];
 }
 
+/* 着色歌词条 */
 - (void)drawRect:(CGRect)rect {
     
     [super drawRect:rect];
