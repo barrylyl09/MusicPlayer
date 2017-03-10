@@ -15,7 +15,7 @@
 #import "MusicModel.h"
 #import "macro_define.h"
 
-@interface MusicPlayerViewController ()
+@interface MusicPlayerViewController ()<UIScrollViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UIImageView *albumImg;
 
@@ -40,6 +40,10 @@
 //歌词定时器
 @property (nonatomic, strong) CADisplayLink *lrcTimer;
 
+/* 歌词 */
+@property (strong, nonatomic) IBOutlet UIScrollView *lrcScrollView;
+
+@property (strong, nonatomic) IBOutlet UILabel *lrcLabel;
 
 @end
 
@@ -108,6 +112,7 @@
 - (void)setUI
 {
     [self.slider setThumbImage:[UIImage imageNamed:@"player_slider_playback_thumb@2x.png"] forState:UIControlStateNormal];
+    _lrcScrollView.contentSize = CGSizeMake(ScreenWidth *2, 0);
     [self playMusic];
 }
 
@@ -164,7 +169,7 @@
 - (void)addSliderTimer
 {
     [self updateSliderInfo];
-    _sliderTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateSliderInfo) userInfo:nil repeats:YES];
+    _sliderTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(updateSliderInfo) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:_sliderTimer forMode:NSRunLoopCommonModes];
     
 }
@@ -175,6 +180,13 @@
     _playTimeLabel.text = [NSString stringWithTime:_currentPlayer.currentTime];
     //更新滑动条
     _slider.value = _currentPlayer.currentTime / _currentPlayer.duration;
+//    NSLog(@"----%f\n",_slider.value);
+    if (_slider.value > nextSecond) {
+        [self removeSlider];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self nextMusicClick:nil];
+        });
+    }
     
 }
 
@@ -193,6 +205,19 @@
     [PlayerTool setUpPlayingMusic:music];
     [self playMusic];
 }
+
+#pragma mark ---scrollView代理方法
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGPoint offcetPoint = scrollView.contentOffset;
+    
+    CGFloat alpha = 1 - offcetPoint.x / ScreenWidth;
+    
+    _singerImg.alpha = alpha;
+    _lrcLabel.alpha = alpha;
+
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

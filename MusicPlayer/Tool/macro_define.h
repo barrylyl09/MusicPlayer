@@ -19,4 +19,6 @@
 #define TabbarHeight                49  //49
 #define IsHotSpotConnected  (AppStatusHeight == HotStatusHeight + StatueBarHeight ? YES:NO)
 
+#define nextSecond 0.996
+
 #endif /* macro_define_h */

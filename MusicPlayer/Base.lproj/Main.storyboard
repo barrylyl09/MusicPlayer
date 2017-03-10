@@ -209,6 +209,8 @@
                     </view>
                     <connections>
                         <outlet property="albumImg" destination="eah-TL-Cnw" id="SKC-kj-tg1"/>
+                        <outlet property="lrcLabel" destination="2PU-Wd-nC7" id="hxt-Pb-8j4"/>
+                        <outlet property="lrcScrollView" destination="UVr-iQ-ZDr" id="ROn-v1-vow"/>
                         <outlet property="musicLabel" destination="dyq-Bc-b2w" id="kEb-FG-Max"/>
                         <outlet property="playAndPasueBtn" destination="j5L-r1-gTq" id="MeH-ja-iJU"/>
                         <outlet property="playTimeLabel" destination="sin-eB-Xar" id="SLb-Ga-fUu"/>
