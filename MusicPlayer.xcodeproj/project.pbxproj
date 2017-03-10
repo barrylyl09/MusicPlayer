@@ -47,6 +47,8 @@
 		246AD34B1E729E2900B8474B /* LrcScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 246AD34A1E729E2900B8474B /* LrcScrollView.m */; };
 		246AD34E1E729E8D00B8474B /* LrcLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 246AD34D1E729E8D00B8474B /* LrcLabel.m */; };
 		246AD3511E72ECE600B8474B /* LrcModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 246AD3501E72ECE600B8474B /* LrcModel.m */; };
+		246AD3541E72FA8F00B8474B /* LrcTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 246AD3531E72FA8F00B8474B /* LrcTableViewCell.m */; };
+		246AD3571E73024000B8474B /* LrcTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 246AD3561E73024000B8474B /* LrcTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,7 +81,7 @@
 		241CCFEB1E6FFBA60079786B /* singer_hym.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singer_hym.png; sourceTree = "<group>"; };
 		241CCFEC1E6FFBA60079786B /* singer_xmj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singer_xmj.png; sourceTree = "<group>"; };
 		241CCFF01E6FFBAE0079786B /* cxqd.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cxqd.lrc; sourceTree = "<group>"; };
-		241CCFF11E6FFBAE0079786B /* qc.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = qc.lrc; sourceTree = "<group>"; };
+		241CCFF11E6FFBAE0079786B /* qc.lrc */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text; path = qc.lrc; sourceTree = "<group>"; };
 		241CCFF21E6FFBAE0079786B /* zmyzmj.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmyzmj.lrc; sourceTree = "<group>"; };
 		241CCFF41E6FFBAE0079786B /* cxqd.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cxqd.mp3; sourceTree = "<group>"; };
 		241CCFF51E6FFBAE0079786B /* qc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = qc.mp3; sourceTree = "<group>"; };
@@ -102,6 +104,10 @@
 		246AD34D1E729E8D00B8474B /* LrcLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrcLabel.m; sourceTree = "<group>"; };
 		246AD34F1E72ECE600B8474B /* LrcModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LrcModel.h; sourceTree = "<group>"; };
 		246AD3501E72ECE600B8474B /* LrcModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrcModel.m; sourceTree = "<group>"; };
+		246AD3521E72FA8F00B8474B /* LrcTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LrcTableViewCell.h; sourceTree = "<group>"; };
+		246AD3531E72FA8F00B8474B /* LrcTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrcTableViewCell.m; sourceTree = "<group>"; };
+		246AD3551E73024000B8474B /* LrcTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LrcTool.h; sourceTree = "<group>"; };
+		246AD3561E73024000B8474B /* LrcTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrcTool.m; sourceTree = "<group>"; };
 		345F970200A0DC84E634FCA1 /* libPods-MusicPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		652E59C6DC86E5F784E11A7B /* Pods-MusicPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicPlayer/Pods-MusicPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		8EF059EB908E82DD4016956B /* Pods-MusicPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicPlayer/Pods-MusicPlayer.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +189,8 @@
 				246AD31B1E70209F00B8474B /* PlayerTool.m */,
 				246AD3371E71027200B8474B /* AudioPlayerTool.h */,
 				246AD3381E71027200B8474B /* AudioPlayerTool.m */,
+				246AD3551E73024000B8474B /* LrcTool.h */,
+				246AD3561E73024000B8474B /* LrcTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -231,6 +239,8 @@
 				246AD34A1E729E2900B8474B /* LrcScrollView.m */,
 				246AD34C1E729E8D00B8474B /* LrcLabel.h */,
 				246AD34D1E729E8D00B8474B /* LrcLabel.m */,
+				246AD3521E72FA8F00B8474B /* LrcTableViewCell.h */,
+				246AD3531E72FA8F00B8474B /* LrcTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -473,6 +483,8 @@
 				241CCFC31E6FDF870079786B /* MusicPlayerViewController.m in Sources */,
 				246AD3391E71027200B8474B /* AudioPlayerTool.m in Sources */,
 				246AD3421E7155CE00B8474B /* NSString+Extension.m in Sources */,
+				246AD3541E72FA8F00B8474B /* LrcTableViewCell.m in Sources */,
+				246AD3571E73024000B8474B /* LrcTool.m in Sources */,
 				246AD3511E72ECE600B8474B /* LrcModel.m in Sources */,
 				246AD3451E7168A200B8474B /* CALayer+Extension.m in Sources */,
 			);

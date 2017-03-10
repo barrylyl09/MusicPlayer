@@ -14,6 +14,8 @@
 #import "AudioPlayerTool.h"
 #import "MusicModel.h"
 #import "macro_define.h"
+#import "LrcScrollView.h"
+#import "LrcLabel.h"
 
 @interface MusicPlayerViewController ()<UIScrollViewDelegate>
 
@@ -158,10 +160,12 @@
     _playAndPasueBtn.selected = currentMusic.isPlaying;
     
     [self addSingerImgAnimation];
+    
     [self removeSlider];
     [self addSliderTimer];
     
-    [self addSliderTimer];
+    [self removerLrc];
+    [self addLrcTimer];
     
 }
 
@@ -204,6 +208,25 @@
     
     [PlayerTool setUpPlayingMusic:music];
     [self playMusic];
+}
+
+- (void)addLrcTimer
+{
+    //CADisplayLink是一个能让我们以和屏幕刷新率相同的频率将内容画到屏幕上的定时器。
+    _lrcTimer = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateLrc)];
+    
+    [_lrcTimer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+}
+
+- (void)updateLrc
+{
+    
+}
+
+- (void)removerLrc
+{
+    [_lrcTimer invalidate];
+    _lrcTimer = nil;
 }
 
 #pragma mark ---scrollView代理方法

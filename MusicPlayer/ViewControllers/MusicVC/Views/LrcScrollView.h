@@ -13,11 +13,12 @@
 @interface LrcScrollView : UIScrollView
 
 @property (nonatomic, copy) NSString *lrcName;
+@property (nonatomic, copy) NSString *Name;
 
 @property (nonatomic, weak) LrcLabel *lrcLabel;
 
 @property (nonatomic, assign) NSTimeInterval currentTime;
-
+//播放总时长
 @property (nonatomic, assign) NSTimeInterval duration;
 
 @end
