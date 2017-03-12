@@ -20,7 +20,8 @@
     if (self = [super init]) {
         NSArray *lrcArr = [lrcStr componentsSeparatedByString:@"]"];
         _lrcText = lrcArr[1];
-//        NSLog(@"text:---%@\n",_lrcText);
+        NSLog(@"----:%@\n",_lrcText);
+        NSLog(@"====:%@\n",lrcArr[0]);
         _time = [self timeWithString:[lrcArr[0] substringFromIndex:1]];  //从字符串第二个字符开始截取
     }
     

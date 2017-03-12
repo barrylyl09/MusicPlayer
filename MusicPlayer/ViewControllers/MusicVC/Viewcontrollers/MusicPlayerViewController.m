@@ -57,12 +57,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.slider setThumbImage:[UIImage imageNamed:@"player_slider_playback_thumb@2x.png"] forState:UIControlStateNormal];
-    
-//    _lrcScrollView.lrcLabel = _lrcLabel;
-    self.lrcScrollView.lrcLabel = self.lrcLabel;
-    [self playMusic];
-    _lrcScrollView.contentSize = CGSizeMake(ScreenWidth *2, 0);
+    [self setUI];
     
 }
 
@@ -120,6 +115,10 @@
 #pragma mark ---UI
 - (void)setUI
 {
+    [self.slider setThumbImage:[UIImage imageNamed:@"player_slider_playback_thumb@2x.png"] forState:UIControlStateNormal];
+    _lrcScrollView.contentSize = CGSizeMake(ScreenWidth *2, 0);
+    self.lrcScrollView.lrcLabel = self.lrcLabel;
+    [self playMusic];
     
 }
 
