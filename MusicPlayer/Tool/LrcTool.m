@@ -17,7 +17,7 @@
     
     // 2. 获取歌词
     NSString *lrcString = [NSString stringWithContentsOfFile:lrcFilePath encoding:NSUTF8StringEncoding error:nil];
-    
+    NSLog(@"---%@",lrcString);
     // 将歌词转化为数组 ，会以每个\n为分隔符 转化为数组中的每个元素
     NSArray *lrcArr = [lrcString componentsSeparatedByString:@"\n"];
     

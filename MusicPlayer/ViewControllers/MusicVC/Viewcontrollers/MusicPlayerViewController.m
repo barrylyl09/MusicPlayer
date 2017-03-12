@@ -14,8 +14,8 @@
 #import "AudioPlayerTool.h"
 #import "MusicModel.h"
 #import "macro_define.h"
-#import "LrcScrollView.h"
 #import "LrcLabel.h"
+#import "LrcView.h"
 
 @interface MusicPlayerViewController ()<UIScrollViewDelegate>
 
@@ -43,9 +43,9 @@
 @property (nonatomic, strong) CADisplayLink *lrcTimer;
 
 /* 歌词 */
-@property (strong, nonatomic) IBOutlet UIScrollView *lrcScrollView;
+@property (strong, nonatomic) IBOutlet LrcView *lrcScrollView;
 
-@property (strong, nonatomic) IBOutlet UILabel *lrcLabel;
+@property (strong, nonatomic) IBOutlet LrcLabel *lrcLabel;
 
 @end
 
@@ -55,7 +55,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self setUI];
+    [self.slider setThumbImage:[UIImage imageNamed:@"player_slider_playback_thumb@2x.png"] forState:UIControlStateNormal];
+    
+//    _lrcScrollView.lrcLabel = _lrcLabel;
+//    self.lrcScrollView.lrcLabel = self.lrcLabel;
+    [self playMusic];
+    _lrcScrollView.contentSize = CGSizeMake(ScreenWidth *2, 0);
     
 }
 
@@ -113,9 +118,7 @@
 #pragma mark ---UI
 - (void)setUI
 {
-    [self.slider setThumbImage:[UIImage imageNamed:@"player_slider_playback_thumb@2x.png"] forState:UIControlStateNormal];
-    _lrcScrollView.contentSize = CGSizeMake(ScreenWidth *2, 0);
-    [self playMusic];
+    
 }
 
 #pragma mark ---歌手图片旋转动画
@@ -158,6 +161,10 @@
     _currentPlayer = currentMusic;
     
     _playAndPasueBtn.selected = currentMusic.isPlaying;
+    
+    /* 歌曲名、歌曲时间 */
+    _lrcScrollView.Name = musicObj.lrcName;
+    _lrcScrollView.duration = currentMusic.duration;
     
     [self addSingerImgAnimation];
     
@@ -220,7 +227,7 @@
 
 - (void)updateLrc
 {
-    
+    _lrcScrollView.currentTime = _currentPlayer.currentTime;
 }
 
 - (void)removerLrc

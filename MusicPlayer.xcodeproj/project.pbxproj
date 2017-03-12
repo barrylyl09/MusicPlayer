@@ -44,11 +44,11 @@
 		246AD3391E71027200B8474B /* AudioPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 246AD3381E71027200B8474B /* AudioPlayerTool.m */; };
 		246AD3421E7155CE00B8474B /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 246AD3411E7155CE00B8474B /* NSString+Extension.m */; };
 		246AD3451E7168A200B8474B /* CALayer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 246AD3441E7168A200B8474B /* CALayer+Extension.m */; };
-		246AD34B1E729E2900B8474B /* LrcScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 246AD34A1E729E2900B8474B /* LrcScrollView.m */; };
 		246AD34E1E729E8D00B8474B /* LrcLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 246AD34D1E729E8D00B8474B /* LrcLabel.m */; };
 		246AD3511E72ECE600B8474B /* LrcModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 246AD3501E72ECE600B8474B /* LrcModel.m */; };
 		246AD3541E72FA8F00B8474B /* LrcTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 246AD3531E72FA8F00B8474B /* LrcTableViewCell.m */; };
 		246AD3571E73024000B8474B /* LrcTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 246AD3561E73024000B8474B /* LrcTool.m */; };
+		24E584361E739A8100C8A08D /* LrcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E584351E739A8100C8A08D /* LrcView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,8 +98,6 @@
 		246AD3411E7155CE00B8474B /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		246AD3431E7168A200B8474B /* CALayer+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Extension.h"; sourceTree = "<group>"; };
 		246AD3441E7168A200B8474B /* CALayer+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Extension.m"; sourceTree = "<group>"; };
-		246AD3491E729E2900B8474B /* LrcScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LrcScrollView.h; sourceTree = "<group>"; };
-		246AD34A1E729E2900B8474B /* LrcScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrcScrollView.m; sourceTree = "<group>"; };
 		246AD34C1E729E8D00B8474B /* LrcLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LrcLabel.h; sourceTree = "<group>"; };
 		246AD34D1E729E8D00B8474B /* LrcLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrcLabel.m; sourceTree = "<group>"; };
 		246AD34F1E72ECE600B8474B /* LrcModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LrcModel.h; sourceTree = "<group>"; };
@@ -108,6 +106,8 @@
 		246AD3531E72FA8F00B8474B /* LrcTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrcTableViewCell.m; sourceTree = "<group>"; };
 		246AD3551E73024000B8474B /* LrcTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LrcTool.h; sourceTree = "<group>"; };
 		246AD3561E73024000B8474B /* LrcTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrcTool.m; sourceTree = "<group>"; };
+		24E584341E739A8100C8A08D /* LrcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LrcView.h; sourceTree = "<group>"; };
+		24E584351E739A8100C8A08D /* LrcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrcView.m; sourceTree = "<group>"; };
 		345F970200A0DC84E634FCA1 /* libPods-MusicPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		652E59C6DC86E5F784E11A7B /* Pods-MusicPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicPlayer/Pods-MusicPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		8EF059EB908E82DD4016956B /* Pods-MusicPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicPlayer/Pods-MusicPlayer.release.xcconfig"; sourceTree = "<group>"; };
@@ -235,12 +235,12 @@
 		241CCFC01E6FDF580079786B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				246AD3491E729E2900B8474B /* LrcScrollView.h */,
-				246AD34A1E729E2900B8474B /* LrcScrollView.m */,
 				246AD34C1E729E8D00B8474B /* LrcLabel.h */,
 				246AD34D1E729E8D00B8474B /* LrcLabel.m */,
 				246AD3521E72FA8F00B8474B /* LrcTableViewCell.h */,
 				246AD3531E72FA8F00B8474B /* LrcTableViewCell.m */,
+				24E584341E739A8100C8A08D /* LrcView.h */,
+				24E584351E739A8100C8A08D /* LrcView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -479,9 +479,9 @@
 				246AD34E1E729E8D00B8474B /* LrcLabel.m in Sources */,
 				241CD0011E7002AF0079786B /* MusicModel.m in Sources */,
 				241CCFA51E6FDD490079786B /* main.m in Sources */,
-				246AD34B1E729E2900B8474B /* LrcScrollView.m in Sources */,
 				241CCFC31E6FDF870079786B /* MusicPlayerViewController.m in Sources */,
 				246AD3391E71027200B8474B /* AudioPlayerTool.m in Sources */,
+				24E584361E739A8100C8A08D /* LrcView.m in Sources */,
 				246AD3421E7155CE00B8474B /* NSString+Extension.m in Sources */,
 				246AD3541E72FA8F00B8474B /* LrcTableViewCell.m in Sources */,
 				246AD3571E73024000B8474B /* LrcTool.m in Sources */,

@@ -12,7 +12,7 @@
 
 @interface LrcTableViewCell : UITableViewCell
 
-@property (nonatomic, weak) LrcLabel *lrcLabel;
+@property (nonatomic, strong) LrcLabel *lrcLabel;
 
 //set cell
 + (LrcTableViewCell *)lrcCellWithTableView:(UITableView *)tableView;

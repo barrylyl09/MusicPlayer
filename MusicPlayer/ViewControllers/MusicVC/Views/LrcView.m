@@ -1,19 +1,20 @@
 //
-//  LrcScrollView.m
+//  LrcView.m
 //  MusicPlayer
 //
-//  Created by lyl on 2017/3/10.
+//  Created by lyl on 2017/3/11.
 //  Copyright © 2017年 lyl. All rights reserved.
 //
 
-#import "LrcScrollView.h"
+#import "LrcView.h"
 #import "LrcTableViewCell.h"
 #import "LrcModel.h"
 #import "LrcLabel.h"
 #import "LrcTool.h"
 #import "macro_define.h"
+#import <objc/runtime.h>
 
-@interface LrcScrollView()<UITableViewDelegate,UITableViewDataSource>
+@interface LrcView ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, weak) UITableView *tableView;
 /** 歌词数组 */
@@ -23,7 +24,7 @@
 
 @end
 
-@implementation LrcScrollView
+@implementation LrcView
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
@@ -66,12 +67,12 @@
     _tableView.contentInset = UIEdgeInsetsMake(self.tableView.bounds.size.height * 0.5, 0, self.tableView.bounds.size.height * 0.5, 0);
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return _lrcArr.count;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     LrcTableViewCell *cell = [LrcTableViewCell lrcCellWithTableView:tableView];
     
@@ -90,7 +91,7 @@
     return cell;
 }
 
--(void)setLrcName:(NSString *)lrcName
+- (void)setLrcName:(NSString *)lrcName
 {
     // 0.更新行数
     _currentIdx = 0;
@@ -102,6 +103,7 @@
     
     LrcModel *lrcObj = _lrcArr[0];
     _lrcLabel.text = lrcObj.lrcText;
+    
     
     // 刷新表格
     [_tableView reloadData];
