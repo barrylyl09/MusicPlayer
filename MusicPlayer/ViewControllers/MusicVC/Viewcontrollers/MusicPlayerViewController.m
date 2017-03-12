@@ -43,9 +43,11 @@
 @property (nonatomic, strong) CADisplayLink *lrcTimer;
 
 /* 歌词 */
+
 @property (strong, nonatomic) IBOutlet LrcView *lrcScrollView;
 
 @property (strong, nonatomic) IBOutlet LrcLabel *lrcLabel;
+
 
 @end
 
@@ -58,7 +60,7 @@
     [self.slider setThumbImage:[UIImage imageNamed:@"player_slider_playback_thumb@2x.png"] forState:UIControlStateNormal];
     
 //    _lrcScrollView.lrcLabel = _lrcLabel;
-//    self.lrcScrollView.lrcLabel = self.lrcLabel;
+    self.lrcScrollView.lrcLabel = self.lrcLabel;
     [self playMusic];
     _lrcScrollView.contentSize = CGSizeMake(ScreenWidth *2, 0);
     
@@ -163,7 +165,7 @@
     _playAndPasueBtn.selected = currentMusic.isPlaying;
     
     /* 歌曲名、歌曲时间 */
-    _lrcScrollView.Name = musicObj.lrcName;
+    _lrcScrollView.lrcName = musicObj.lrcName;
     _lrcScrollView.duration = currentMusic.duration;
     
     [self addSingerImgAnimation];

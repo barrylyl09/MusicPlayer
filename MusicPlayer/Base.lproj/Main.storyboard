@@ -160,7 +160,7 @@
                                     <constraint firstItem="j5L-r1-gTq" firstAttribute="top" secondItem="59g-0a-T0C" secondAttribute="bottom" constant="24" id="owW-HQ-bc6"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PU-Wd-nC7" userLabel="LrcLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PU-Wd-nC7" userLabel="LrcLabel" customClass="LrcLabel">
                                 <rect key="frame" x="207" y="524" width="0.0" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="qIn-As-K0D"/>
@@ -175,7 +175,7 @@
                                     <constraint firstAttribute="width" secondItem="FQA-fs-fSb" secondAttribute="height" multiplier="1:1" id="1zj-1K-QD7"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UVr-iQ-ZDr">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UVr-iQ-ZDr" customClass="LrcView">
                                 <rect key="frame" x="0.0" y="100" width="414" height="472"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -212,8 +212,8 @@
                     </view>
                     <connections>
                         <outlet property="albumImg" destination="eah-TL-Cnw" id="SKC-kj-tg1"/>
-                        <outlet property="lrcLabel" destination="2PU-Wd-nC7" id="adG-dv-4Tx"/>
-                        <outlet property="lrcScrollView" destination="UVr-iQ-ZDr" id="eAY-Gy-SWP"/>
+                        <outlet property="lrcLabel" destination="2PU-Wd-nC7" id="Ro7-cj-utx"/>
+                        <outlet property="lrcScrollView" destination="UVr-iQ-ZDr" id="Q8Q-UK-FuU"/>
                         <outlet property="musicLabel" destination="dyq-Bc-b2w" id="kEb-FG-Max"/>
                         <outlet property="playAndPasueBtn" destination="j5L-r1-gTq" id="MeH-ja-iJU"/>
                         <outlet property="playTimeLabel" destination="sin-eB-Xar" id="SLb-Ga-fUu"/>
