@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="rRK-Cd-HcJ">
+            <objects>
+                <viewController id="yhD-pX-3D1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ii0-Te-eht"/>
+                        <viewControllerLayoutGuide type="bottom" id="ERc-Bd-hXC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mu6-CL-bF4" userLabel="View_backgroungView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="singer_zgr.png" translatesAutoresizingMaskIntoConstraints="NO" id="xxX-hv-8CX" userLabel="BGimageView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v5S-Os-zln">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="0Sp-S0-PeM">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hyw-d7-7bb" userLabel="songInfoView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="songLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buH-px-zkK">
+                                        <rect key="frame" x="148" y="30" width="80" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="singerLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mji-na-ClU">
+                                        <rect key="frame" x="143.5" y="71" width="89" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0H-Ts-IvY">
+                                        <rect key="frame" x="320" y="18" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="Lke-IA-wS5"/>
+                                            <constraint firstAttribute="height" constant="45" id="kTd-0b-wco"/>
+                                        </constraints>
+                                        <state key="normal" title="moreBtn"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQr-O7-wu9">
+                                        <rect key="frame" x="10" y="20.5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="CA1-wC-S0c"/>
+                                            <constraint firstAttribute="width" constant="40" id="Ia0-9U-RUK"/>
+                                        </constraints>
+                                        <state key="normal" title="arrowBtn" image="miniplayer_btn_playlist_close.png">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="buH-px-zkK" firstAttribute="top" secondItem="Hyw-d7-7bb" secondAttribute="top" constant="30" id="3fo-hT-X5e"/>
+                                    <constraint firstItem="buH-px-zkK" firstAttribute="centerX" secondItem="Hyw-d7-7bb" secondAttribute="centerX" id="8gA-NN-1Pl"/>
+                                    <constraint firstItem="mji-na-ClU" firstAttribute="centerX" secondItem="buH-px-zkK" secondAttribute="centerX" id="Ayc-aV-qTJ"/>
+                                    <constraint firstItem="mQr-O7-wu9" firstAttribute="centerY" secondItem="buH-px-zkK" secondAttribute="centerY" id="DMh-dS-xLZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="O0H-Ts-IvY" secondAttribute="trailing" constant="10" id="Dnc-l7-2cn"/>
+                                    <constraint firstItem="O0H-Ts-IvY" firstAttribute="centerY" secondItem="buH-px-zkK" secondAttribute="centerY" id="Kql-Ld-Gvm"/>
+                                    <constraint firstAttribute="bottom" secondItem="mji-na-ClU" secondAttribute="bottom" constant="8" id="MjI-CE-CAi"/>
+                                    <constraint firstAttribute="height" constant="100" id="eka-eC-9te"/>
+                                    <constraint firstItem="mQr-O7-wu9" firstAttribute="leading" secondItem="Hyw-d7-7bb" secondAttribute="leading" constant="10" id="k5r-yv-TJk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hyw-d7-7bb" firstAttribute="top" secondItem="Ii0-Te-eht" secondAttribute="bottom" id="0mI-Hn-uxH"/>
+                            <constraint firstAttribute="trailing" secondItem="Hyw-d7-7bb" secondAttribute="trailing" id="d0F-J0-9zW"/>
+                            <constraint firstItem="Hyw-d7-7bb" firstAttribute="leading" secondItem="mu6-CL-bF4" secondAttribute="leading" id="mC4-f2-gFz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCh-mb-a0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="45"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="miniplayer_btn_playlist_close.png" width="40" height="40"/>
+        <image name="singer_zgr.png" width="360" height="364"/>
+    </resources>
+</document>

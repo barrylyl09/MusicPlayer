@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C89BBAE37ABBD1493023371 /* libPods-MusicPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 345F970200A0DC84E634FCA1 /* libPods-MusicPlayer.a */; };
+		240BA82C1E7786910049615A /* player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240BA82B1E7786910049615A /* player.storyboard */; };
 		241CCFA51E6FDD490079786B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 241CCFA41E6FDD490079786B /* main.m */; };
 		241CCFA81E6FDD490079786B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 241CCFA71E6FDD490079786B /* AppDelegate.m */; };
 		241CCFAE1E6FDD490079786B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241CCFAC1E6FDD490079786B /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		240BA82B1E7786910049615A /* player.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = player.storyboard; sourceTree = "<group>"; };
 		241CCFA01E6FDD490079786B /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		241CCFA41E6FDD490079786B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		241CCFA61E6FDD490079786B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				241CCFA61E6FDD490079786B /* AppDelegate.h */,
 				241CCFA71E6FDD490079786B /* AppDelegate.m */,
 				241CCFAC1E6FDD490079786B /* Main.storyboard */,
+				240BA82B1E7786910049615A /* player.storyboard */,
 				241CCFAF1E6FDD490079786B /* Assets.xcassets */,
 				241CCFB11E6FDD490079786B /* LaunchScreen.storyboard */,
 				241CCFB41E6FDD490079786B /* Info.plist */,
@@ -400,6 +403,7 @@
 				241CCFED1E6FFBA60079786B /* singer_hym.png in Resources */,
 				241CCFFC1E6FFBAE0079786B /* zmynmj.mp3 in Resources */,
 				241CCFE11E6FEAFB0079786B /* player_btn_play_normal@2x.png in Resources */,
+				240BA82C1E7786910049615A /* player.storyboard in Resources */,
 				241CCFF71E6FFBAE0079786B /* cxqd.lrc in Resources */,
 				241CCFF91E6FFBAE0079786B /* zmyzmj.lrc in Resources */,
 				241CCFDA1E6FEAFB0079786B /* miniplayer_btn_playlist_close@2x.png in Resources */,
